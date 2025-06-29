@@ -100,20 +100,39 @@ function App() {
       {/* Footer */}
       <footer className={`${darkMode ? 'bg-gray-800 border-gray-700' : 'bg-white border-gray-200'} border-t mt-16`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <div className="text-center">
-            <p className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-              © 2025 JobMatchAI. Empowering careers with AI-driven resume optimization.
-            </p>
-            <div className="mt-2 flex justify-center space-x-4 text-xs">
-              <button className={`hover:underline ${darkMode ? 'text-gray-400 hover:text-gray-300' : 'text-gray-500 hover:text-gray-700'}`}>
-                Privacy Policy
-              </button>
-              <button className={`hover:underline ${darkMode ? 'text-gray-400 hover:text-gray-300' : 'text-gray-500 hover:text-gray-700'}`}>
-                Terms of Service
-              </button>
-              <button className={`hover:underline ${darkMode ? 'text-gray-400 hover:text-gray-300' : 'text-gray-500 hover:text-gray-700'}`}>
-                Contact Support
-              </button>
+          <div className="flex flex-col items-center space-y-4">
+            {/* Built with Bolt Badge */}
+            <a
+              href="https://bolt.new"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`inline-flex items-center space-x-2 px-4 py-2 rounded-full border transition-all duration-200 hover:scale-105 ${
+                darkMode 
+                  ? 'bg-gradient-to-r from-purple-600 to-blue-600 border-purple-500 text-white hover:from-purple-700 hover:to-blue-700' 
+                  : 'bg-gradient-to-r from-purple-500 to-blue-500 border-purple-400 text-white hover:from-purple-600 hover:to-blue-600'
+              } shadow-lg hover:shadow-xl`}
+            >
+              <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M13 3L4 14h7l-2 7 9-11h-7l2-7z"/>
+              </svg>
+              <span className="text-sm font-semibold">Built with Bolt</span>
+            </a>
+            
+            <div className="text-center">
+              <p className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+                © 2025 JobMatchAI. Empowering careers with AI-driven resume optimization.
+              </p>
+              <div className="mt-2 flex justify-center space-x-4 text-xs">
+                <button className={`hover:underline ${darkMode ? 'text-gray-400 hover:text-gray-300' : 'text-gray-500 hover:text-gray-700'}`}>
+                  Privacy Policy
+                </button>
+                <button className={`hover:underline ${darkMode ? 'text-gray-400 hover:text-gray-300' : 'text-gray-500 hover:text-gray-700'}`}>
+                  Terms of Service
+                </button>
+                <button className={`hover:underline ${darkMode ? 'text-gray-400 hover:text-gray-300' : 'text-gray-500 hover:text-gray-700'}`}>
+                  Contact Support
+                </button>
+              </div>
             </div>
           </div>
         </div>
